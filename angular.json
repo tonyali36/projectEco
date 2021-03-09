@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "projectEco"
+  "defaultProject": "projectEco",
+  "cli": {
+    "analytics": "031175d5-8d6b-4138-a23b-036bd8794a0b"
+  }
 }
