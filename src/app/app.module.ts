@@ -8,13 +8,17 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { HomeComponent } from './home/home.component';
+import { ArticleComponent } from './article/article.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ArticleComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
