@@ -12,6 +12,7 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #333;
+    height: 49px;
   }
   
   .topnav a {
@@ -35,4 +36,10 @@ body {
 
   .login {
       float: right;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      button {
+        margin-right: 15px;
+      }
   }
