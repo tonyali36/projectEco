@@ -10,6 +10,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { ArticleComponent } from './article/article.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FooterComponent,
     HomeComponent,
     ArticleComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SignInComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
