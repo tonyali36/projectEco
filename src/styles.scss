@@ -24,12 +24,12 @@ body {
     font-size: 17px;
   }
   
-  .topnav a:hover {
+  .topnav a:hover, .topnav a.active {
     background-color: #ddd;
     color: black;
   }
   
-  .topnav a.active {
+  .topnav a.logo {
     background-color: cadetblue;
     color: white;
   }
