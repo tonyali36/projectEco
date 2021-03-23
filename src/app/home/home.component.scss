@@ -17,10 +17,6 @@ p {
     margin: 3%;
 }
 
-
-
-
-
 .card-in {
     display: flex;
     justify-content: center;
@@ -66,4 +62,79 @@ p {
     .res-card-box{
         width: 100vw !important;
     }
+}
+
+
+
+div#slider { width: 80%; max-width: 1000px; } 
+
+div#slider figure {
+    position: relative; 
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+  }
+
+  div#slider figure img { width: 20%; height: auto; float: left; }
+
+div#slider { width: 100%; max-width: 1000px;  }
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 25s slidy infinite;
+}
+
+.container {
+    overflow: hidden;
+     width: 50%;
+     margin-left: 0%;
+     margin-right: 50%;
+     margin-bottom: 5%;
+}
+
+.zone-titre {
+    font-size: 50px ;
+    color: #b9b9b9;
+    text-align: center;
+    line-height: 20px;
+}
+
+.zone-text {
+    width: 40%;
+    color : #b9b9b9;
+    z-index: 10;
+    font-size: 25px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.zone-paragraphe {
+    font-size: 17px ;
+    float: center ;
+}
+
+.carousel {
+    background-color:#b9b9b9;
+    background-image:url(../../assets/images/slider.jpg);
+    color :#e2e2e2;
 }
