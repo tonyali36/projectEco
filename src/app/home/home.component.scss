@@ -1,18 +1,27 @@
-
-    .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
-
-  .carte {
-    max-width: 300px;
-  }
-
-  .box {
-    width: 300px;
+.biographie {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    font-family: 'Rubik', sans-serif;
 }
 
-  .all {
+h1 {
+    text-align: center;
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 32px;
+}
+p {
+    text-align: center;
+    margin: 3%;
+}
+
+
+
+
+
+.card-in {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,42 +31,39 @@
     padding-bottom: 5%;
     padding-top: 5%;
     font-family: 'Rubik', sans-serif;
+    .res-card-box{
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .box-three {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        width: 300px;
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 450px;
+            padding: 5px;
+            margin: 5px;
+            .carte {
+                max-width: 300px;
+            }
+        }
+    }
 }
 
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 450px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.box-three {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 3%;
-    font-weight: bold;
-    font-size: 32px;
-}
-
-p {
-    text-align: center;
-    margin: 3%;
-}
-
-.biographie {
-    background-color: white;
-    text-align: center;
-    padding-bottom: 10%;
-    padding-top: 5%;
-    font-family: 'Rubik', sans-serif;
+@media (max-width:1200px){
+    .res-card-box{
+        width: 100vw !important;
+    }
 }
