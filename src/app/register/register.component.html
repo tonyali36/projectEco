@@ -1,1 +1,29 @@
-<p>register works!</p>
+<form class="sign-in-form">
+    <mat-form-field>
+      <mat-label>Adresse mail</mat-label>
+      <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher" required>
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Entrez une adresse mail valide
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Une adresse mail est <strong>requise</strong>
+      </mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label>Mot de passe</mat-label>
+      <input type="password" matInput [formControl]="passwordFormControl" required>
+      <mat-error *ngIf="passwordFormControl.hasError('required')">
+        Un mot de passe est <strong>requis</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Confirmer le mot de passe</mat-label>
+      <input type="password" matInput [formControl]="confirmPasswordFormControl" required>
+      <mat-error *ngIf="confirmPasswordFormControl.hasError('required')">
+        Une mot de passe est <strong>requis</strong>
+      </mat-error>
+    </mat-form-field>
+    
+    <button mat-raised-button color="primary">S'inscrire !</button>
+  </form>
