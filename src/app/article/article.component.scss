@@ -22,52 +22,12 @@
 
 .title-header{
     text-align: center;
-    margin-top: 120px;
-    margin-bottom: 92px;
+    margin-top: 70px;
+    margin-bottom: 50px;
     font-size: 32px;
     font-weight: bold;
 }
 
-.card-in {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: white;
-    text-align: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    font-family: 'Rubik', sans-serif;
-    .res-card-box{
-        width: 60vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .box-three {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .box {
-        width: 300px;
-        .card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 450px;
-            padding: 5px;
-            margin: 5px;
-            .carte {
-                max-width: 300px;
-            }
-        }
-    }
-}
 
 @media (max-width:1200px){
     .res-card-box{

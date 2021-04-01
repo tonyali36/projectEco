@@ -1,0 +1,33 @@
+.topnav {
+    position: fixed;
+    width: 100%; 
+    overflow: hidden;
+    background-color: #333;
+    height: 49px;
+    z-index: 100;
+    a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      &:hover, &.active {
+        background-color: #ddd;
+        color: black;
+      }
+      &.logo {
+        background-color: cadetblue;
+        color: white;
+      }
+    }
+    .login {
+        float: right;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        button {
+          margin-right: 15px;
+        }
+    }
+  }

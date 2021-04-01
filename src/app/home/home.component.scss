@@ -1,11 +1,3 @@
-.biographie {
-    background-color: white;
-    text-align: center;
-    padding-bottom: 10%;
-    padding-top: 5%;
-    font-family: 'Rubik', sans-serif;
-}
-
 h1 {
     text-align: center;
     margin-top: 3%;
@@ -15,49 +7,6 @@ h1 {
 p {
     text-align: center;
     margin: 3%;
-}
-
-
-
-.card-in {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: white;
-    text-align: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    font-family: 'Rubik', sans-serif;
-    .res-card-box{
-        width: 60vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .box-three {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .box {
-        width: 300px;
-        .card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 450px;
-            padding: 5px;
-            margin: 5px;
-            .carte {
-                max-width: 300px;
-            }
-        }
-    }
 }
 
 @media (max-width:1200px){
@@ -72,6 +21,7 @@ p {
     background-color:#b9b9b9;
     background-image:url(../../assets/images/slider.jpg);
     color :#e2e2e2;
+    padding-top: 49px;
     .container {
         overflow: hidden;
          width: 50%;
@@ -118,20 +68,21 @@ p {
 .zone-text {
     width: 40%;
     color : #b9b9b9;
-    z-index: 10;
-    font-size: 25px ;
     margin-right: 0%;
     margin-left: 55%;
     margin-top: -35%;
-    margin-bottom: 30%;
+    margin-bottom: 120px;
+    text-align: center;
     .zone-titre {
-        font-size: 50px ;
-        color: #b9b9b9;
-        text-align: center;
-        line-height: 20px;
+        font-size: 2vw;
+        line-height: 1.5vw;
+    }
+    .zone-citation h1{
+        font-size: 2vw;
+        line-height: 1.5vw;
     }
     .zone-paragraphe {
-        font-size: 17px ;
-        float: center ;
+        font-size: 1vw;
+        line-height: 1.5vw;
     }
 }
