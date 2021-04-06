@@ -19,27 +19,27 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 
 export class RegisterComponent {
   
-  // register: FormGroup;
+  register: FormGroup;
   
   
-  // constructor(private formBuilder: FormBuilder) {
-  //   this.register = this.formBuilder.group({
-  //     emailFormControl: ['', [Validators.required, Validators.email]],
-  //     pseudoFormControl: ['', [Validators.required]],
-  //     passwordFormControl: ['', [Validators.required]],
-  //     confirmPasswordFormControl: ['']
-  //   }, { validator: this.checkPasswords });
+  constructor(private formBuilder: FormBuilder) {
+    this.register = this.formBuilder.group({
+      emailFormControl: ['', [Validators.required, Validators.email]],
+      pseudoFormControl: ['', [Validators.required]],
+      passwordFormControl: ['', [Validators.required]],
+      confirmPasswordFormControl: ['']
+    }, { validator: this.checkPasswords });
 
-  // }
+  }
   
   matcher = new MyErrorStateMatcher();
   
   
-    // checkPasswords(group: FormGroup) { // here we have the 'passwords' group
-    //   const password = group.get('password').value;
-    //   const confirmPassword = group.get('confirmPassword').value;
+    checkPasswords(group: FormGroup) { // here we have the 'passwords' group
+      const password = group.get('password').value;
+      const confirmPassword = group.get('confirmPassword').value;
     
-    //   return password === confirmPassword ? null : { notSame: true }     
-    // }
+      return password === confirmPassword ? null : { notSame: true }     
+    }
 
 }
