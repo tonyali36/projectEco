@@ -3,9 +3,6 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-const port = 3000
-
-
 
 var corsOptions = {
     origin: "http://localhost:8081"
@@ -19,17 +16,15 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.json({ message: "Welcome to bezkoder application." });
-});
 
-app.listen(port, function (error) {
-    if (error) {
-        console.log('Something went wrong', error)
-    } else {
-        console.log('Server is listening on port' + port)
-    }
-})
+
+require("./app/routes/article.routes")(app);
+
+// set port, listen for requests
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
+});
 
 //sync
 
